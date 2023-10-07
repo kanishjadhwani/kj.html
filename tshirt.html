@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized T-Shirt Order Form</title>
+</head>
+<body>
+    <h1>Customized T-Shirt Order Form</h1>
+    <form action="process_order.php" method="POST">
+        <!-- Tagline Input -->
+        <label for="tagline">Tagline on the Shirt:</label>
+        <input type="text" id="tagline" name="tagline" required>
+        
+        
+        <label for="color">Shirt Color:</label>
+        <select id="color" name="color" required>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+            <!-- Add more color options as needed -->
+        </select>
+        
+        <!-- Size Selection -->
+        <label for="size">Shirt Size:</label>
+        <input type="radio" id="small" name="size" value="small" required>
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium" required>
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="large" required>
+        <label for="large">Large</label>
+        <!-- You can add more size options if needed -->
+        
+        <!-- Quantity Input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        
+        <!-- Delivery Date -->
+        <label for="delivery_date">Delivery Date:</label>
+        <input type="date" id="delivery_date" name="delivery_date" required>
+        
+        <!-- Additional Details -->
+        <label for="additional_details">Additional Details:</label>
+        <textarea id="additional_details" name="additional_details" rows="4" cols="50"></textarea>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
